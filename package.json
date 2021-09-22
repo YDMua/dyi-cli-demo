@@ -1,0 +1,41 @@
+{
+  "name": "dyi-cli-demo",
+  "version": "1.0.0",
+  "description": "dong.yi custom cli scaffold",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node build.js",
+    "build": "cross-env NODE_ENV=production node build.js",
+    "create": "node template"
+  },
+  "bin": {
+    "dyi": "./lib/bin/cli.js"
+  },
+  "author": "dong.yi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^7.28.0",
+    "@types/figlet": "^1.5.4",
+    "@types/fs-extra": "^9.0.12",
+    "@types/inquirer": "^8.1.1",
+    "@types/node": "^16.9.1",
+    "@types/ora": "^3.2.0",
+    "@typescript-eslint/parser": "^4.31.1",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.12.28",
+    "glob": "^7.1.7",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "commander": "^8.2.0",
+    "dyi-tool": "^1.0.0-beta.4",
+    "eslint": "^7.32.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.5",
+    "ora": "5.4.1",
+    "util": "^0.12.4"
+  }
+}
