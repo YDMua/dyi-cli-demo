@@ -6,7 +6,7 @@ import pkg from '../../package.json'
 import create from '../create'
 const program = new Command()
 
-// 创建文件
+// 创建文件命令
 program
   .command('create <project-name>')
   .description('create a new project')
@@ -34,4 +34,5 @@ program.on('--help', () => {
     )} to understand the details \r\n `,
   )
 })
+// 解析参数
 program.parse(process.argv)
