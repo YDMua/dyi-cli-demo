@@ -45,7 +45,6 @@ const Create = async (name: string, options: any) => {
     ],
     message: '请选择一个项目模版进行创建',
   })
-
   // 复制项目模版
   copyDir(`./src/template/${projectName}`, `./${name}`)
 }
